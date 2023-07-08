@@ -1,0 +1,127 @@
+To make the pictures in the gallery section the same size, you can use CSS to set a fixed height for the images. Here's the updated code with the necessary changes:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Pirate Park</title>
+    <style>
+        .text-container {
+            margin-top: 2rem;
+        }
+
+        .gallery-img {
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">The Pirate Park</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#gallery" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#location" class="nav-link">Location</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="bg-dark text-light p-15p-lg-0 p-lg-10 p-md-10 text-left text-sm-start shadow p-3 mb-5 bg-body">
+        <div class="container p-5 bg-dark">
+            <div class="row align-items-left">
+                <div class="col-lg-2 col-md-6 text-center text-md-start">
+                    <div class="text-container">
+                        <h1>Come experience a time lost at sea.</h1>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <img src="static/boat 2.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark text-light p-15p-lg-0 p-lg-10 p-md-10 text-left text-sm-start shadow p-3 mb-5 bg-body">
+        <div class="container p-5 bg-dark">
+            <div class="row align-items-left">
+                <div class="col-lg-2 col-md-6 text-center text-md-start">
+                    <div class="text-container">
+                        <h1 id="about">Find hidden treasure.</h1>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <img src="static/hidden.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="location" class="bg-dark text-light p-15p-lg-0 p-lg-10 p-md-10 text-left text-sm-start shadow p-3 mb-5 bg-body">
+        <div class="container p-5 bg-dark">
+            <div class="row align-items-left">
+                <div class="col-lg-2 col-md-6 text-center text-md-start">
+                    <div class="text-container">
+                        <h1>Find us next to the river.</h1>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <img src="static/map.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="p-10 p-lg-0 lg-10 text-center text-sm-start shadow">
+        <div class="container p-5">
+            <h1 class="text-center p-5">See the gallery</h1>
+            <div class="row g-4">
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img src="static/beac.jpg" alt="" class="img-fluid gallery-img shadow-lg">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img src="static/boat 2.jpg" alt="" class="img-fluid gallery-img shadow-lg">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img src="static/boat.jpg" alt="" class="img-fluid gallery-img shadow-lg">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img src="static/map.jpg" alt="" class="img-fluid gallery-img shadow-lg">
+                </div>
+            </div>
+            <div class="row g-4 p-4">
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img src="static/cliff.jpg" alt="" class="img-fluid gallery-img shadow-lg">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img src="static/swing.jpg" alt="" class="img-fluid gallery-img shadow-lg">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img id="location" src="static/hidden.jpg" alt="" class="img-fluid gallery-img shadow-lg">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img src="static/map 2.jpg" alt="" class="img-fluid gallery-img shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
